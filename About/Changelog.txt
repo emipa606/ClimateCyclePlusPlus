@@ -1,0 +1,4 @@
+# Changelog for ClimateCycle++
+
+1.0.2.0 - Refactored code, updated solution, added versioninfo in settings
+
