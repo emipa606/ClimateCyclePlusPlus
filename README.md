@@ -44,9 +44,9 @@ Not savegame compatible.
 
 There are three types of climate cycle: The first one is similar to the vanilla Climate Cycle, only it ramps up quicker and further. The second version is a climate cycle that gets hotter and hotter and the final version gets colder and colder. You can change these in the Settings menu.
 
-Is the "Winter is Coming" setting still not cold enough for you? Want really freezing temperatures? Try it together with http://steamcommunity.com/sharedfiles/filedetails/?id=949225013]Extreme Colds by Why_is_that.
+Is the &quot;Winter is Coming&quot; setting still not cold enough for you? Want really freezing temperatures? Try it together with http://steamcommunity.com/sharedfiles/filedetails/?id=949225013]Extreme Colds by Why_is_that.
 
-It also adds an alert for Heatstroke. You'll need it.
+It also adds an alert for Heatstroke. You&apos;ll need it.
 
 ![Image](https://i.imgur.com/Rs6T6cr.png)
 
@@ -58,6 +58,7 @@ It also adds an alert for Heatstroke. You'll need it.
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

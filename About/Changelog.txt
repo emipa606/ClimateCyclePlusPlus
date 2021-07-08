@@ -1,4 +1,7 @@
 # Changelog for ClimateCycle++
 
+1.0.3.0 - Mod updated for 1.3 and passed autotests
+
+
 1.0.2.0 - Refactored code, updated solution, added versioninfo in settings
 
