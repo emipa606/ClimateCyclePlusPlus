@@ -1,23 +1,14 @@
 # ClimateCyclePlusPlus
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Mehnis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1266884568
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/ClimateCycle++]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 A run away climate cycle, seeking EXTREEEEEME weather.
@@ -44,11 +35,11 @@ Not savegame compatible.
 
 There are three types of climate cycle: The first one is similar to the vanilla Climate Cycle, only it ramps up quicker and further. The second version is a climate cycle that gets hotter and hotter and the final version gets colder and colder. You can change these in the Settings menu.
 
-Is the &quot;Winter is Coming&quot; setting still not cold enough for you? Want really freezing temperatures? Try it together with http://steamcommunity.com/sharedfiles/filedetails/?id=949225013]Extreme Colds by Why_is_that.
+Is the "Winter is Coming" setting still not cold enough for you? Want really freezing temperatures? Try it together with http://steamcommunity.com/sharedfiles/filedetails/?id=949225013]Extreme Colds by Why_is_that.
 
-It also adds an alert for Heatstroke. You&apos;ll need it.
+It also adds an alert for Heatstroke. You'll need it.
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -58,7 +49,6 @@ It also adds an alert for Heatstroke. You&apos;ll need it.
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
-
 
 
 

@@ -4,50 +4,49 @@ using System.Text;
 using RimWorld;
 using Verse;
 
-namespace ClimateCyclePlusPlus
+namespace ClimateCyclePlusPlus;
+
+//"Adapted" from RimWorld.Alert_Hypothermia
+public class Alert_Heatstroke : Alert_Critical
 {
-    //"Adapted" from RimWorld.Alert_Hypothermia
-    public class Alert_Heatstroke : Alert_Critical
+    public Alert_Heatstroke()
     {
-        public Alert_Heatstroke()
-        {
-            defaultLabel = "AlertHeatstroke".Translate();
-        }
+        defaultLabel = "AlertHeatstroke".Translate();
+    }
 
-        private IEnumerable<Pawn> HeatstrokeDangerColonists
+    private IEnumerable<Pawn> HeatstrokeDangerColonists
+    {
+        get
         {
-            get
+            foreach (var p in PawnsFinder.AllMaps_FreeColonistsSpawned)
             {
-                foreach (var p in PawnsFinder.AllMaps_FreeColonistsSpawned)
+                if (p.SafeTemperatureRange().Includes(p.AmbientTemperature))
                 {
-                    if (p.SafeTemperatureRange().Includes(p.AmbientTemperature))
-                    {
-                        continue;
-                    }
+                    continue;
+                }
 
-                    var heatstroke = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Heatstroke);
-                    if (heatstroke != null && heatstroke.CurStageIndex >= 3)
-                    {
-                        yield return p;
-                    }
+                var heatstroke = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Heatstroke);
+                if (heatstroke != null && heatstroke.CurStageIndex >= 3)
+                {
+                    yield return p;
                 }
             }
         }
+    }
 
-        public override TaggedString GetExplanation()
+    public override TaggedString GetExplanation()
+    {
+        var stringBuilder = new StringBuilder();
+        foreach (var current in HeatstrokeDangerColonists)
         {
-            var stringBuilder = new StringBuilder();
-            foreach (var current in HeatstrokeDangerColonists)
-            {
-                stringBuilder.AppendLine("    " + current.NameShortColored);
-            }
-
-            return "AlertHeatstrokeDesc".Translate(stringBuilder.ToString());
+            stringBuilder.AppendLine("    " + current.NameShortColored);
         }
 
-        public override AlertReport GetReport()
-        {
-            return AlertReport.CulpritsAre(HeatstrokeDangerColonists.ToList());
-        }
+        return "AlertHeatstrokeDesc".Translate(stringBuilder.ToString());
+    }
+
+    public override AlertReport GetReport()
+    {
+        return AlertReport.CulpritsAre(HeatstrokeDangerColonists.ToList());
     }
 }

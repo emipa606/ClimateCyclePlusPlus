@@ -1,5 +1,8 @@
 # Changelog for ClimateCycle++
 
+1.0.4.0 - Updated VersionFromManifest-file to not get the 'loading is already in progress' error with some mods
+
+
 1.0.3.0 - Mod updated for 1.3 and passed autotests
 
 
