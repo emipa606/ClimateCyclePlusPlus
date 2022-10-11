@@ -26,7 +26,7 @@ public class Alert_Heatstroke : Alert_Critical
                 }
 
                 var heatstroke = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Heatstroke);
-                if (heatstroke != null && heatstroke.CurStageIndex >= 3)
+                if (heatstroke is { CurStageIndex: >= 3 })
                 {
                     yield return p;
                 }
