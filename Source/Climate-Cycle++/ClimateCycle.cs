@@ -9,15 +9,14 @@ internal class ClimateCycle : Mod
     private static string currentVersion;
 
     public static readonly string[] cycleTypes =
-        { "Regular Cycle", "Winter is coming", "Waiting for the Sun", "Normal Summer, Cold Winter" };
+        ["Regular Cycle", "Winter is coming", "Waiting for the Sun", "Normal Summer, Cold Winter"];
 
     private readonly CycleSettings settings;
 
     public ClimateCycle(ModContentPack content) : base(content)
     {
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(
-                ModLister.GetActiveModWithIdentifier("Mlie.ClimateCyclePlusPlus"));
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
         settings = GetSettings<CycleSettings>();
         GameCondition_ClimateCyclePlusPlus.settings = settings;
     }

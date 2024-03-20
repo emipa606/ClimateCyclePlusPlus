@@ -63,12 +63,11 @@ internal static class SettingsHelper
         Widgets.TextFieldNumeric(rightHalf, ref settingsValue, ref buffer, minValue, maxValue);
     }
 
-    public static Rect LineRectSpilter(this Listing_Standard listing_Standard, out Rect leftHalf,
+    public static void LineRectSpilter(this Listing_Standard listing_Standard, out Rect leftHalf,
         out Rect rightHalf, float leftPartPct = 0.5f, float? height = null)
     {
         var lineRect = listing_Standard.LineRectSpilter(out leftHalf, leftPartPct, height);
         rightHalf = lineRect.RightPart(1f - leftPartPct).Rounded();
-        return lineRect;
     }
 
     public static Rect LineRectSpilter(this Listing_Standard listing_Standard, out Rect leftHalf,
@@ -79,16 +78,10 @@ internal static class SettingsHelper
         return lineRect;
     }
 
-    public class LabeledRadioValue<T>
+    public class LabeledRadioValue<T>(string label, T val)
     {
-        public LabeledRadioValue(string label, T val)
-        {
-            Label = label;
-            Value = val;
-        }
+        public string Label { get; } = label;
 
-        public string Label { get; set; }
-
-        public T Value { get; set; }
+        public T Value { get; } = val;
     }
 }
