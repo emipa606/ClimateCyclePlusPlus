@@ -1,4 +1,4 @@
-# ClimateCyclePlusPlus
+# [Climate Cycle++ (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2024296023)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -6,10 +6,8 @@ Update of Mehnis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1266884568
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
-
 
 A run away climate cycle, seeking EXTREEEEEME weather.
 
@@ -35,7 +33,7 @@ Not savegame compatible.
 
 There are three types of climate cycle: The first one is similar to the vanilla Climate Cycle, only it ramps up quicker and further. The second version is a climate cycle that gets hotter and hotter and the final version gets colder and colder. You can change these in the Settings menu.
 
-Is the "Winter is Coming" setting still not cold enough for you? Want really freezing temperatures? Try it together with http://steamcommunity.com/sharedfiles/filedetails/?id=949225013]Extreme Colds by Why_is_that.
+Is the "Winter is Coming" setting still not cold enough for you? Want really freezing temperatures? Try it together with [Extreme Colds](http://steamcommunity.com/sharedfiles/filedetails/?id=949225013) by Why_is_that.
 
 It also adds an alert for Heatstroke. You'll need it.
 
@@ -45,13 +43,12 @@ It also adds an alert for Heatstroke. You'll need it.
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2024296023]![Image](https://img.shields.io/github/v/release/emipa606/ClimateCyclePlusPlus?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/ClimateCyclePlusPlus?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2024296023) | tags:  catastrophic events

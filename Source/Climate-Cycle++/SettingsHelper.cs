@@ -7,30 +7,28 @@ namespace ClimateCyclePlusPlus;
 //thanks to AlexTD and Why_is_that for the below
 internal static class SettingsHelper
 {
-    public static Rect GetRect(this Listing_Standard listing_Standard, float? height = null)
+    private static Rect getRect(this Listing_Standard listingStandard, float? height = null)
     {
-        return listing_Standard.GetRect(height ?? Text.LineHeight);
+        return listingStandard.GetRect(height ?? Text.LineHeight);
     }
 
-    public static void AddLabeledRadioList(this Listing_Standard listing_Standard, string header, string[] labels,
+    public static void AddLabeledRadioList(this Listing_Standard listingStandard, string header, string[] labels,
         ref string val, float? headerHeight = null)
     {
-        //listing_Standard.Gap();
         if (header != string.Empty)
         {
-            Widgets.Label(listing_Standard.GetRect(headerHeight), header);
+            Widgets.Label(listingStandard.getRect(headerHeight), header);
         }
 
-        listing_Standard.AddRadioList(GenerateLabeledRadioValues(labels), ref val);
+        listingStandard.addRadioList(generateLabeledRadioValues(labels), ref val);
     }
 
-    private static void AddRadioList<T>(this Listing_Standard listing_Standard, List<LabeledRadioValue<T>> items,
+    private static void addRadioList<T>(this Listing_Standard listing_Standard, List<LabeledRadioValue<T>> items,
         ref T val, float? height = null)
     {
         foreach (var item in items)
         {
-            //listing_Standard.Gap();
-            var lineRect = listing_Standard.GetRect(height);
+            var lineRect = listing_Standard.getRect(height);
             if (Widgets.RadioButtonLabeled(lineRect, item.Label,
                     EqualityComparer<T>.Default.Equals(item.Value, val)))
             {
@@ -39,7 +37,7 @@ internal static class SettingsHelper
         }
     }
 
-    private static List<LabeledRadioValue<string>> GenerateLabeledRadioValues(string[] labels)
+    private static List<LabeledRadioValue<string>> generateLabeledRadioValues(string[] labels)
     {
         var list = new List<LabeledRadioValue<string>>();
         foreach (var label in labels)
@@ -50,12 +48,12 @@ internal static class SettingsHelper
         return list;
     }
 
-    public static void AddLabeledNumericalTextField<T>(this Listing_Standard listing_Standard, string label,
+    public static void AddLabeledNumericalTextField<T>(this Listing_Standard listingStandard, string label,
         ref T settingsValue, float leftPartPct = 0.5f, float minValue = 1f, float maxValue = 100000f)
         where T : struct
     {
-        listing_Standard.Gap();
-        listing_Standard.LineRectSpilter(out var leftHalf, out var rightHalf, leftPartPct);
+        listingStandard.Gap();
+        listingStandard.lineRectSplitter(out var leftHalf, out var rightHalf, leftPartPct);
 
         Widgets.Label(leftHalf, label);
 
@@ -63,22 +61,22 @@ internal static class SettingsHelper
         Widgets.TextFieldNumeric(rightHalf, ref settingsValue, ref buffer, minValue, maxValue);
     }
 
-    public static void LineRectSpilter(this Listing_Standard listing_Standard, out Rect leftHalf,
+    private static void lineRectSplitter(this Listing_Standard listingStandard, out Rect leftHalf,
         out Rect rightHalf, float leftPartPct = 0.5f, float? height = null)
     {
-        var lineRect = listing_Standard.LineRectSpilter(out leftHalf, leftPartPct, height);
+        var lineRect = listingStandard.lineRectSplitter(out leftHalf, leftPartPct, height);
         rightHalf = lineRect.RightPart(1f - leftPartPct).Rounded();
     }
 
-    public static Rect LineRectSpilter(this Listing_Standard listing_Standard, out Rect leftHalf,
+    private static Rect lineRectSplitter(this Listing_Standard listingStandard, out Rect leftHalf,
         float leftPartPct = 0.5f, float? height = null)
     {
-        var lineRect = listing_Standard.GetRect(height);
+        var lineRect = listingStandard.getRect(height);
         leftHalf = lineRect.LeftPart(leftPartPct).Rounded();
         return lineRect;
     }
 
-    public class LabeledRadioValue<T>(string label, T val)
+    private class LabeledRadioValue<T>(string label, T val)
     {
         public string Label { get; } = label;
 

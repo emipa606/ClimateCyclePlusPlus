@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>87d4718b-2e7c-4a28-a3b1-8a5a7670fdd9</ID>
   <ModName>Climate Cycle++ (Continued)</ModName>
-  <Version>1.5.0</Version>
+  <Version>1.6.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,3 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
+

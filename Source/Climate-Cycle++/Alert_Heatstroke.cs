@@ -14,7 +14,7 @@ public class Alert_Heatstroke : Alert_Critical
         defaultLabel = "AlertHeatstroke".Translate();
     }
 
-    private IEnumerable<Pawn> HeatstrokeDangerColonists
+    private static IEnumerable<Pawn> HeatstrokeDangerColonists
     {
         get
         {

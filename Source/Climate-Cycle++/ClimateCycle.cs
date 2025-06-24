@@ -8,7 +8,7 @@ internal class ClimateCycle : Mod
 {
     private static string currentVersion;
 
-    public static readonly string[] cycleTypes =
+    private static readonly string[] cycleTypes =
         ["Regular Cycle", "Winter is coming", "Waiting for the Sun", "Normal Summer, Cold Winter"];
 
     private readonly CycleSettings settings;
@@ -18,7 +18,7 @@ internal class ClimateCycle : Mod
         currentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
         settings = GetSettings<CycleSettings>();
-        GameCondition_ClimateCyclePlusPlus.settings = settings;
+        GameCondition_ClimateCyclePlusPlus.Settings = settings;
     }
 
     public override string SettingsCategory()
@@ -28,26 +28,24 @@ internal class ClimateCycle : Mod
 
     public override void DoSettingsWindowContents(Rect inRect)
     {
-        var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(inRect);
-        //listing_Standard.AddLabeledCheckbox("CCPP_ColdNightHotDays".Translate(), ref settings.showWeather);
-        //listing_Standard.AddHorizontalLine(3f);
-        listing_Standard.AddLabeledRadioList($"{"CCPP_CycleTypeChoice".Translate()}:", cycleTypes,
-            ref settings.cycleType);
-        listing_Standard.GapLine(3f);
-        listing_Standard.AddLabeledNumericalTextField("CCPP_Multiplier".Translate(), ref settings.cycleMultiplier,
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(inRect);
+        listingStandard.AddLabeledRadioList($"{"CCPP_CycleTypeChoice".Translate()}:", cycleTypes,
+            ref settings.CycleType);
+        listingStandard.GapLine(3f);
+        listingStandard.AddLabeledNumericalTextField("CCPP_Multiplier".Translate(), ref settings.CycleMultiplier,
             minValue: 1f, maxValue: 20f);
-        listing_Standard.AddLabeledNumericalTextField("CCPP_Periods".Translate(), ref settings.cyclePeriods,
+        listingStandard.AddLabeledNumericalTextField("CCPP_Periods".Translate(), ref settings.CyclePeriods,
             minValue: 1f, maxValue: 8f);
         if (currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("CurrentModVersion_Label".Translate(currentVersion));
+            listingStandard.Label("CurrentModVersion_Label".Translate(currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
         settings.Write();
     }
 }
