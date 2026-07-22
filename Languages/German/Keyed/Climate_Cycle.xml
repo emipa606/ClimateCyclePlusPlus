@@ -5,6 +5,6 @@
   <CCPP_Multiplier>Multiplikator für den Temperaturanstieg. Höher = extremere Temp.</CCPP_Multiplier>
   <CCPP_Periods>Jahre für einen vollständigen Zyklus heiß -> kalt -> heiß. Standard ist 4.</CCPP_Periods>
   <AlertHeatstroke>Hitzeschlag</AlertHeatstroke>
-  <AlertHeatstrokeDesc>Diese Menschen leiden an einem Hitzschlag. Achten Sie darauf, dass ihre Kleidung der Jahreszeit angemessen ist und dass die Innenräume gut gekühlt sind.</AlertHeatstrokeDesc>
   <CurrentModVersion_Label>Installierte Mod-Version: {0}</CurrentModVersion_Label>
+  <AlertHeatstrokeDesc>Diese Kolonisten leiden unter einem Hitzschlag.\n\n{0}\nStelle sicher, dass ihre Kleidung der Jahreszeit angemessen ist und dass die Innenräume ausreichend gekühlt sind.</AlertHeatstrokeDesc>
 </LanguageData>

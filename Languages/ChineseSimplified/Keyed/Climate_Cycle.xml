@@ -5,6 +5,6 @@
   <CCPP_Multiplier>温升乘数。越高 = 温度越高。</CCPP_Multiplier>
   <CCPP_Periods>完全热 -> 冷 -> 热循环的年数。默认值为 4。</CCPP_Periods>
   <AlertHeatstroke>中暑</AlertHeatstroke>
-  <AlertHeatstrokeDesc>这些殖民地居民正在中暑。</AlertHeatstrokeDesc>
   <CurrentModVersion_Label>已安装模块版本：{0}</CurrentModVersion_Label>
+  <AlertHeatstrokeDesc>这些殖民者正遭受中暑之苦。\n\n{0}\n请确保他们的着装符合季节特点，并确保室内空间得到适当降温。</AlertHeatstrokeDesc>
 </LanguageData>
