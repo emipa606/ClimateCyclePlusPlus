@@ -51,4 +51,4 @@ It also adds an alert for Heatstroke. You'll need it.
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/ClimateCyclePlusPlus?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2024296023) | tags: catastrophic events
+[![Image](https://img.shields.io/github/v/release/emipa606/ClimateCyclePlusPlus?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2024296023) | catastrophic events
